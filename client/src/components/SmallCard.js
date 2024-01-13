@@ -1,7 +1,7 @@
 import Modal from "./Modal";
 import { useState } from "react";
 
-export default function Todo() {
+export default function SmallCard() {
   const [showModal, setShowModal] = useState(false);
   const handleOnClose = () => setShowModal(false);
 
