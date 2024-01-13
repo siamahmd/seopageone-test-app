@@ -19,19 +19,67 @@ const CardHeading = styled.div`
   display: flex;
   align-items: center;
   justify-content: start;
+`;
+const CardHeadingFirst = styled.div`
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   &:before {
     content: "";
     width: 20px;
     height: 22px;
     position: absolute;
-    left: 50px;
-    background: red;
+    left: 20px;
+    background-color: rgb(185 28 28);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
   }
 `;
-const CardTitle = styled.h1`
+const CardHeadingSecond = styled.div`
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  &:before {
+    content: "";
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    left: 20px;
+    background-color: rgb(14 165 233);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+`;
+
+const CardHeadingThird = styled.div`
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  &:before {
+    content: "";
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    left: 20px;
+    background-color: rgb(251 191 36);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+`;
+const CardTitleWothColor = styled.h1`
   margin-left: 50px;
+  font-weight: 600;
+`;
+
+const CardTitle = styled.h1`
+  margin-left: 10px;
+  font-weight: 600;
 `;
 const Card = styled.div`
   margin: 5px;
@@ -45,39 +93,54 @@ export default function Home() {
   return (
     <Wrapper>
       <CardWrapper>
+        <CardHeadingFirst>
+          <CardTitleWothColor>Incomplete</CardTitleWothColor>
+        </CardHeadingFirst>
+        <Card>
+          <MainCard></MainCard>
+        </Card>
+      </CardWrapper>
+
+      <CardWrapper>
+        <CardHeadingSecond>
+          <CardTitleWothColor>To Do</CardTitleWothColor>
+        </CardHeadingSecond>
+        <Card>
+          <MainCard></MainCard>
+        </Card>
+      </CardWrapper>
+
+      <CardWrapper>
+        <CardHeadingThird>
+          <CardTitleWothColor>Doing</CardTitleWothColor>
+        </CardHeadingThird>
+        <Card>
+          <MainCard></MainCard>
+        </Card>
+      </CardWrapper>
+
+      <CardWrapper>
         <CardHeading>
-          <CardTitle>Incomplete</CardTitle>
+          <CardTitle>Under Review</CardTitle>
         </CardHeading>
         <Card>
           <MainCard></MainCard>
         </Card>
       </CardWrapper>
+
       <CardWrapper>
-        <h1>To Do</h1>
+        <CardHeading>
+          <CardTitle>Completed</CardTitle>
+        </CardHeading>
         <Card>
           <MainCard></MainCard>
         </Card>
       </CardWrapper>
+
       <CardWrapper>
-        <h1>To Do</h1>
-        <Card>
-          <MainCard></MainCard>
-        </Card>
-      </CardWrapper>
-      <CardWrapper>
-        <h1>To Do</h1>
-        <Card>
-          <MainCard></MainCard>
-        </Card>
-      </CardWrapper>
-      <CardWrapper>
-        <h1>To Do</h1>
-        <Card>
-          <MainCard></MainCard>
-        </Card>
-      </CardWrapper>
-      <CardWrapper>
-        <h1>To Do</h1>
+        <CardHeading>
+          <CardTitle>Over</CardTitle>
+        </CardHeading>
         <Card>
           <MainCard></MainCard>
         </Card>
