@@ -1,4 +1,4 @@
-import Todos from "../components/Todos";
+import MainCard from "../components/MainCard";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -49,37 +49,37 @@ export default function Home() {
           <CardTitle>Incomplete</CardTitle>
         </CardHeading>
         <Card>
-          <Todos></Todos>
+          <MainCard></MainCard>
         </Card>
       </CardWrapper>
       <CardWrapper>
         <h1>To Do</h1>
         <Card>
-          <Todos></Todos>
+          <MainCard></MainCard>
         </Card>
       </CardWrapper>
       <CardWrapper>
         <h1>To Do</h1>
         <Card>
-          <Todos></Todos>
+          <MainCard></MainCard>
         </Card>
       </CardWrapper>
       <CardWrapper>
         <h1>To Do</h1>
         <Card>
-          <Todos></Todos>
+          <MainCard></MainCard>
         </Card>
       </CardWrapper>
       <CardWrapper>
         <h1>To Do</h1>
         <Card>
-          <Todos></Todos>
+          <MainCard></MainCard>
         </Card>
       </CardWrapper>
       <CardWrapper>
         <h1>To Do</h1>
         <Card>
-          <Todos></Todos>
+          <MainCard></MainCard>
         </Card>
       </CardWrapper>
     </Wrapper>
