@@ -10,19 +10,44 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 `;
 
+const CardWrapper = styled.div`
+  background-color: rgb(229 231 235);
+  margin: 5px;
+`;
+const CardHeading = styled.div`
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  &:before {
+    content: "";
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    left: 50px;
+    background: red;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+`;
+const CardTitle = styled.h1`
+  margin-left: 50px;
+`;
 const Card = styled.div`
   margin: 5px;
   overflow-y: scroll;
   overflow-x: hidden;
   height: 92vh;
+  background-color: rgb(229 231 235);
 `;
-const CardWrapper = styled.div``;
 
 export default function Home() {
   return (
     <Wrapper>
       <CardWrapper>
-        <h1>Incomplete</h1>
+        <CardHeading>
+          <CardTitle>Incomplete</CardTitle>
+        </CardHeading>
         <Card>
           <Todos></Todos>
         </Card>
